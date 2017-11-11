@@ -1,0 +1,20 @@
+version: "3"
+
+services:
+  api:
+    container_name: api
+    build: ./docker/golang
+    volumes:
+     - ./src/:/go/src
+    ports:
+     - "6060:6060"
+    environment:
+     GO_ENV: "development"
+  mongo:
+   container_name: mongo
+   build: ./docker/mongo
+   command: sh /var/www/build.sh
+   volumes:
+    - ./docker/mongo/:/var/www
+   ports:
+    - "127.0.0.1:27017:27017"

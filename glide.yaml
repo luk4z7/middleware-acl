@@ -1,0 +1,18 @@
+package: main
+import:
+- package: github.com/rs/cors
+  version: ^1.0.0
+- package: gopkg.in/mgo.v2
+  subpackages:
+  - bson
+- package: github.com/gorilla/mux
+- package: github.com/fatih/structs
+- package: github.com/codegangsta/negroni
+- package: github.com/pborman/uuid
+- package: github.com/agtorre/gocolorize
+- package: gopkg.in/yaml.v2
+- package: github.com/casbin/casbin
+- package: github.com/casbin/mongodb-adapter
+- package: github.com/stretchr/testify/assert
+- package: gopkg.in/check.v1
+- package: github.com/mattn/goveralls

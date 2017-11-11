@@ -1,0 +1,17 @@
+/bin
+/pkg
+/.tmp
+github.com/
+golang.org/
+gopkg.in/
+sourcegraph.com/
+.idea/
+.vscode/
+.DS_Store
+.build
+reflex
+*.swp
+src/middleware/.cover/*
+src/middleware/coverage.html
+src/vendor
+vendor
